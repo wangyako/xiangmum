@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h4,h5,h6,h3,p,dl,ul,li,dt,dd,td,input,fieldset,form{margin:0;padding:0;}
+body{font-family: "微软雅黑";font-size:12px;}
+ul,ol,li{list-style:none;}
+a,u{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100;}
+b,strong{font-weight:100;}
+em,i{font-style:none;}
+img{border:0;vertical-align:top;}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility: hidden;}
+
+

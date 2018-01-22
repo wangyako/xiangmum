@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/login.css"/>
+	</head>
+	<body>
+		<div id="logo">
+			<img src="../img/shopex.png"/>
+		</div>
+		<div id="btop">
+			<div class="img">
+					<img src="../img/ecshop-logo.png"/>
+			</div>		
+			<div id="box">
+				
+				<p>
+					<span class="iconfont icon-iconset0202"></span>
+					<input type="text" name="" class="int" value="" placeholder="用户名" id="username" />
+				</p>
+				<p>
+					<span class="iconfont icon-12quanxianguanli"></span>
+					<input type="password" name="" class="int" value="" placeholder="密码" id="psw" />
+				</p>
+				<p>
+					<span class="iconfont icon-baifenbi"></span>
+					<input type="password" name="" class="int" value="" placeholder="验证码" id="yzm" />
+				</p>
+				<button class="btn" onclick="login()">登录</button><br />
+				<input type="checkbox" name="loginname" id="loginname" value="" />
+				<label for="loginname">保存登录信息</label>
+				<a class="password" href="#">忘记密码</a>
+				<a class="shop" href="#">去店铺看看>></a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+</html>
+<script type="text/javascript">
+	function login() {
+		$.ajax({
+			url: "/api/login4ajax",
+			type: "post",
+			data: {
+				username: $("#username").val(),
+				psw: $("#psw").val(),
+				yzm:$("#yzm").val()
+			},
+			success: function(res) {
+				console.log(res);
+				if(res.code == 1) {
+//					alert(res.message);
+					 location.href = "/Backstage?r=" + new Date().getTime();
+				} else {
+					alert(res.message);
+				}
+			}
+		})
+	}
+</script>

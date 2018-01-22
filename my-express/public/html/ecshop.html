@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/ecshop.css"/>
+	</head>
+	<body>
+		<div id="shop-header">
+	        <h1>ECSHOP管理中心</h1>
+	        <span class="action-span1">-商品列表</span>
+	        <i><img src="/img/1516110256(1).png"></i>
+	        <span class="action-span">
+	        	<a href="addGoods.html" target="ecshop">+添加新商品</a>
+	        </span>
+        </div>
+	<!--	以上为ECShop的top部分-->
+		
+		<div id="search">
+			<img src="../img/1516191840(1).png"/>
+			
+			<select name="classify" id="classify">
+				<option value="">所有分类</option>
+				<option value="">钻石</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp裤子</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲短裤</option>
+				
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔裤</option>
+				
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔中裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲分裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp衬衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖衬衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖衬衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp外套</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp棉服</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp风衣</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp羽绒服</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大衣</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp皮衣/皮草</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp夹克</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西服</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp卫衣</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp内衣</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内衣/套装</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp袜子</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp家居服</option>
+				<option value="">&nbsp&nbsp&nbsp&nbspPOLO衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖</option>
+				<option value="">&nbsp&nbsp&nbsp&nbspT恤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖T恤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖T恤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp背心</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp针织衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp开衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp针织背心</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp套头衫</option>
+				<option value="">女装</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp内衣</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp丝袜/裤袜</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp睡衣</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp美体内衣</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp文胸</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp套装/打底</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp裤子</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp打底裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲短裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp哈伦裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔分裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp连身裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔短裤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp裙</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp连衣裙</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp吊带裙</option>
+				
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp半裙</option>
+				<option value="">&nbsp&nbsp&nbsp&nbspT恤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖T恤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖T恤</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPOLO衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp针织衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp开衫</option>
+				<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖针织衫</option>
+			</select>
+			<select id="brand">
+				<option value="">所有品牌</option>
+				<option value="">kk</option>
+				<option value="">溢彩年华</option>
+				<option value="">EVENY</option>
+				<option value="">圣迪奥</option>
+				<option value="">韩都衣舍</option>
+				<option value="">betu百图</option>
+				<option value="">艾夫斯</option>
+				<option value="">太平鸟</option>
+				<option value="">O.SA</option>
+				<option value="">空间大师</option>
+				<option value="">美好家</option>
+				<option value="">生活诚品</option>
+				<option value="">帮宝适</option>
+				<option value="">贝亲</option>
+				<option value="">雅培</option>
+				<option value="">好事达</option>
+				<option value="">千弘</option>
+				<option value="">美亿佳</option>
+				<option value="">大豪</option>
+				<option value="">宝优妮</option>
+				<option value="">裂帛</option>
+				<option value="">JNBY江南布衣</option>
+				<option value="">LILY</option>
+				<option value="">联想</option>
+				<option value="">惠普</option>
+				<option value="">美的</option>
+				<option value="">天翼</option>
+				<option value="">漫步者</option>
+				<option value="">希捷</option>
+				<option value="">方正</option>
+				<option value="">APPLE</option>
+				<option value="">金立</option>
+				<option value="">恒基伟业</option>
+				<option value="">夏普</option>
+				<option value="">白领</option>
+				<option value="">acer</option>
+				<option value="">AMD</option>
+				<option value="">爱普生</option>
+				<option value="">茵佳妮</option>
+				<option value="">乐华</option>
+				<option value="">创维</option>
+				<option value="">索尼</option>
+				<option value="">有讯网络</option>
+			</select>
+			<select id="Recommend">
+				<option value="">全部</option>
+				<option value="">精品</option>
+				<option value="">新品</option>
+				<option value="">热销</option>
+				<option value="">特价</option>
+				<option value="">全部推荐</option>
+			</select>
+			<select id="grounding">
+				<option value="">全部</option>
+				<option value="">下架</option>
+				<option value="">上架</option>
+			</select>
+			<span>关键字</span>
+			<input type="text" name="" id="int-o" value="" />
+			<input type="submit" name="" id="int-t" value="搜索" />
+		</div>
+		<!--以上为搜索栏部分-->
+		
+		<table border="" cellspacing="0" cellpadding="0" id="top-lie">
+			<td>编号</td>
+			<td>商品名称</td>
+			<td>货号</td>
+			<td>价格</td>
+			<td>虚拟销量</td>
+			<td>热销</td>
+			<td>上架</td>
+			<td>操作</td>
+		</table>
+		<table border="" cellspacing="0" cellpadding="0" id="main"></table>
+		
+		
+		<div class="page" style="float: right;margin-right: 20px;">
+			总计 <span class="Total">0</span>个
+			记录分为<span class="current">3</span>页
+			当前第<span class="pages">1</span>页，
+			每页<input type="text" name="" size="3" class="branches" value="5" >
+			<span id="pagelink">
+				<a href="javascript:wyg(1)">首页</a>
+				<a href="javascript:goes(-1)">上一页</a>
+				<a href="javascript:goes(1)">下一页</a>
+				<a href="javascript:wyg()">最末页</a>
+				<select class="lowezr" onchange="change()">
+					
+				</select>
+			</span>
+		</div>
+		
+		
+		<div id="Choice">
+			<select id="choice-tru">
+				<option value="">请选择..</option>
+				<option value="">回收站</option>
+				<option value="">上架</option>
+				<option value="">下架</option>
+				<option value="">精品</option>
+				<option value="">取消精品</option>
+				<option value="">新品</option>
+				<option value="">取消新品</option>
+				<option value="">热销</option>
+				<option value="">取消热销</option>
+				<option value="">转移到分类</option>
+			</select>
+			<input type="submit" name="" id="int-th" value="确定" />
+		</div>
+<!--以上为表格 部分-->	
+
+
+
+
+
+
+		<div id="footer">
+			<span class="footer-o">
+共执行 7 个查询，用时 0.023026 秒，Gzip 已禁用，内存占用 3.552 MB</span><br>
+			<span>
+版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。</span>
+		</div>
+		<!--以上为footer部分-->
+	</body>
+<script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+</html>
+<script type="text/javascript">
+	
+	//添加商品功能
+function addition(){
+		$.ajax({
+			url: "/goods",
+			type : "post",
+			data :{
+				goodsName : ""
+			},
+			success : function(res){
+//				console.log(res);
+				$(".goods-list").remove();
+				var len = res.length;
+				for(var i = 0 ; i < len ; i++){
+//					console.log(res[i]);
+					var td = `<tr class="goods-list">
+                        <td class="lie"><input type="checkbox"/></td>
+                        <td class="lie">${res[i].goods_name}</td>                      
+                        <td class="lie">${res[i].article}</td>                        
+                        <td class="lie">${res[i].sales}</td>                       
+                        <td class="lie">${res[i].price}</td>
+                        <td class="lie">
+                        	<img src="/img/1516414494(1).png"/>
+                        </td>
+                        <td class="lie">
+                        	<img src="/img/1516414503(1).png"/>
+                        </td>
+                        <td class="lie">
+                        	<span>
+                        		<img src="/img/1516414514(1).png"/>
+                        		<img src="/img/1516414524(1).png"/>
+                        		<img src="/img/1516414533(1).png"/>
+                        		<img src="/img/1516414540(1).png"/>
+                        	</span>
+
+                        </td>
+                        </tr>`;
+                    $("#main").append(td);
+                        
+				}
+			}
+		})
+	}
+	addition();
+	
+	
+	//分页功能
+	$(".branches").keydown(function(e){
+		if(e.keyCode == 13){
+			var e=event.srcElement;
+			missw();
+		}
+	})
+	function missw(){
+		$.ajax({
+			url: "/ajaxfeny",
+			type : "get",
+			data :{
+				condition :1,
+				pageNO : $(".pages").html(),
+				perPageCnt : $(".branches").val() 
+			},
+
+			success : function(res){
+				console.log(res);
+				var data = res.data;
+				var count = res.total;
+				// console.log(count)
+				var len = data.length;
+				var allpage = Number(Math.ceil(count / $(".branches").val() ))
+				$(".current").html(allpage)
+				var yezi = res.pageNO;//第几页
+				$(".Total").html(count)
+
+				$(".goods-list").remove();
+//				var len = res.length;
+				for(var i = 0 ; i < len ; i++){
+//					console.log(res[i]);
+					var td = `<tr class="goods-list">
+                        <td class="lie"><input type="checkbox"/></td>
+                        <td class="lie">${data[i].goods_name}</td>                      
+                        <td class="lie">${data[i].article}</td>                        
+                        <td class="lie">${data[i].sales}</td>                       
+                        <td class="lie">${data[i].price}</td>
+                        <td class="lie">
+                        	<img src="/img/1516414494(1).png"/>
+                        </td>
+                        <td class="lie">
+                        	<img src="/img/1516414503(1).png"/>
+                        </td>
+                        <td class="lie">
+                        	<span>
+                        		<img src="/img/1516414514(1).png"/>
+                        		<img src="/img/1516414524(1).png"/>
+                        		<img src="/img/1516414533(1).png"/>
+                        		<img src="/img/1516414540(1).png"/>
+                        	</span>
+
+                        </td>
+                        </tr>`;
+                    $("#main").append(td);
+                        
+				}
+			}
+		})
+	}
+	missw();
+	
+	
+	//翻页功能
+	
+	function change(){
+	  missw();
+	}
+	function wyg(num){
+	  $(".pages").html(num||$(".current").html())
+//	  console.log($(".pages").html())
+	  missw()
+	}
+	function goes(num){
+	  if($(".pages").html()*1+num>$(".current").html()){
+	    alert("已经是最后一页了")
+	  }else if($(".pages").html()*1+num===-1){
+	            alert("已经是第一页了")
+	    }else{
+	      $(".pages").html($(".pages").html()*1+num)
+	      missw()
+	    }
+	}
+ 
+	
+	
+	</script>

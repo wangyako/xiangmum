@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css"/>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/addGoods.css' />
+  </head>
+  <body>
+    <div id="shop-add">
+      <div id="shop-header">
+      <h1>ECSHOP管理中心</h1>
+      <span class="action-span1">-商品列表</span>
+      <i><img src="/img/1516110256(1).png"></i>
+        <span class="action-span">
+          <a href="ecshop.html" target="ecshop">+添加新商品</a>
+        </span>
+      </div>
+			<!--以上为头部部分-->
+      <div class="tab-div">
+
+        <div id="tab-inp">
+          <span class="tab-front">通用信息</span>
+          <span class="tab-back">详细描述</span>
+          <span class="tab-back">其他信息</span>
+          <span class="tab-back">商品属性</span>
+          <span class="tab-back">商品相册</span>
+          <span class="tab-back">关联商品</span>
+          <span class="tab-back">配件</span>
+          <span class="tab-back">关联文章</span>
+        </div>
+          <!--以上为选显卡按钮部分-->
+        
+        <div id="tabbody">
+          <form>
+            <table id="general-table" class="xuan_table">
+              <tbody>
+                <tr>
+                  <td class="label">商品名称：</td>
+                  <td>
+                    <input type="text" name="goods_name" id="goods_name">
+                    <select name="" style="width:72px;height:19px;font-size: 12px">
+                    	<option value="">字体样式</option>
+                    	<option value="">加粗</option>
+                    	<option value="">斜体</option>
+                    	<option value="">下划线</option>
+                    	<option value="">删除线</option>
+                    </select>
+                    <span class="require-field">*</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">
+                    <a href="javascript:void(0)"><img src="/img/wenhao.gif"></a>
+                  商品货号：</td>
+                  <td>
+                    <input type="text" name="" id="article"><br>
+                    <span class="notice-span">如果您不输入商品货号，系统将自动生成一个唯一的货号。</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">商品分类：</td>
+                  <td>
+                    <select style="width: 158px ;float: left;" id="classification
+
+">
+                      <option value="">请选择...</option>
+											<option value="">钻石</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp裤子</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲短裤</option>
+											
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔裤</option>
+											
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔中裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲分裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp衬衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖衬衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖衬衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp外套</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp棉服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp风衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp羽绒服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp皮衣/皮草</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp夹克</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp卫衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp内衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内衣/套装</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp袜子</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp家居服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbspPOLO衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖</option>
+											<option value="">&nbsp&nbsp&nbsp&nbspT恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp背心</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp针织衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp开衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp针织背心</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp套头衫</option>
+											<option value="">女装</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp内衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp丝袜/裤袜</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp睡衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp美体内衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp文胸</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp套装/打底</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp裤子</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp打底裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲短裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp哈伦裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔分裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp连身裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔短裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp裙</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp连衣裙</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp吊带裙</option>
+											
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp半裙</option>
+											<option value="">&nbsp&nbsp&nbsp&nbspT恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPOLO衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp针织衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp开衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖针织衫</option>
+                    </select>
+                    <a href="javascript:void(0)" class="special price" style="float: left;">添加分类</a>
+                    <i class="wang" style="display: none;float: left;">
+                    	<input type="text" name="" id="" value="" style="width:75px;height:19px"/>
+                    	<input type="button" name="" id="" value="确定" style="width:40px;height:21px;background:#DDEEF2;border:1px solid #91C4D0"/>
+                    	<input type="button" name="" id="" value="分类管理" style="width:61px;height:21px;background:#DDEEF2;border:1px solid #91C4D0"/>
+                    	<input type="button" name="" id="ya" value="<<" style="width:21px;height:21px;background:#DDEEF2;border:1px solid #91C4D0"/>
+                    </i>
+                    <span class="require-field" style="float: left;">*</span>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label label-wang">扩展分类：
+                 
+                 
+                     </td>
+                  <td>
+                    <input type="button" name="" value="添加" class="button"style="float: left;">
+                     <select style="width: 158px ;display: none;float: left;margin-top: 5px;" class="wangya">
+                      <option value="">请选择...</option>
+											<option value="">钻石</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp裤子</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲短裤</option>
+											
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔裤</option>
+											
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔中裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲分裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp衬衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖衬衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖衬衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp外套</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp棉服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp风衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp羽绒服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp皮衣/皮草</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp夹克</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp卫衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp内衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内衣/套装</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp袜子</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp家居服</option>
+											<option value="">&nbsp&nbsp&nbsp&nbspPOLO衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖</option>
+											<option value="">&nbsp&nbsp&nbsp&nbspT恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp背心</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp针织衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp开衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp针织背心</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp套头衫</option>
+											<option value="">女装</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp内衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp丝袜/裤袜</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp睡衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp美体内衣</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp文胸</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp套装/打底</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp内裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp裤子</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp打底裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp休闲短裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp哈伦裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔分裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp连身裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牛仔短裤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp裙</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp连衣裙</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp吊带裙</option>
+											
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp半裙</option>
+											<option value="">&nbsp&nbsp&nbsp&nbspT恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长袖T恤</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPOLO衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp针织衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp开衫</option>
+											<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp短袖针织衫</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">商品品牌：</td>
+                  <td>
+                    <select style="width: 105px;float: left;">
+                      <option>请选择...</option>
+                      <option value="">kk</option>
+											<option value="">溢彩年华</option>
+											<option value="">EVENY</option>
+											<option value="">圣迪奥</option>
+											<option value="">韩都衣舍</option>
+											<option value="">betu百图</option>
+											<option value="">艾夫斯</option>
+											<option value="">太平鸟</option>
+											<option value="">O.SA</option>
+											<option value="">空间大师</option>
+											<option value="">美好家</option>
+											<option value="">生活诚品</option>
+											<option value="">帮宝适</option>
+											<option value="">贝亲</option>
+											<option value="">雅培</option>
+											<option value="">好事达</option>
+											<option value="">千弘</option>
+											<option value="">美亿佳</option>
+											<option value="">大豪</option>
+											<option value="">宝优妮</option>
+											<option value="">裂帛</option>
+											<option value="">JNBY江南布衣</option>
+											<option value="">LILY</option>
+											<option value="">联想</option>
+											<option value="">惠普</option>
+											<option value="">美的</option>
+											<option value="">天翼</option>
+											<option value="">漫步者</option>
+											<option value="">希捷</option>
+											<option value="">方正</option>
+											<option value="">APPLE</option>
+											<option value="">金立</option>
+											<option value="">恒基伟业</option>
+											<option value="">夏普</option>
+											<option value="">白领</option>
+											<option value="">acer</option>
+											<option value="">AMD</option>
+											<option value="">爱普生</option>
+											<option value="">茵佳妮</option>
+											<option value="">乐华</option>
+											<option value="">创维</option>
+											<option value="">索尼</option>
+											<option value="">有讯网络</option>
+                    </select>
+                    <a href="javascript:void(0)" class="special pingpai" style="float: left;">添加品牌</a>
+                    <i class="wangyage" style="display: none;float: left;">
+                    	<input type="text" name="" id="" value="" style="width:105px;height:19px"/>
+                    	<input type="button" name="" id="" value="确定" style="width:40px;height:21px;background:#DDEEF2;border:1px solid #91C4D0"/>
+                    	<input type="button" name="" id="" value="分类管理" style="width:61px;height:21px;background:#DDEEF2;border:1px solid #91C4D0"/>
+                    	<input type="button" name="" id="ge" value="<<" style="width:21px;height:21px;background:#DDEEF2;border:1px solid #91C4D0"/>
+                    </i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">本地售价：</td>
+                  <td>
+                    <input type="text" name="" size="20" width="135">
+                    <input type="button" name="" value="按市场价计算">
+                    <span class="require-field">*</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">
+                <a href="javascript:void(0)"><img src="/img/wenhao.gif"></a>
+                  会员价格：</td>
+                  <td>注册用户
+                  <input type="text" name="" size="8">
+                  代销用户
+                  <input type="text" name="" size="8">
+                  vip
+                  <input type="text" name="" size="8"><br>
+                  <span class="notice-span">
+                    会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格
+                  </span>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">
+                <a href="javascript:void(0)"><img src="/img/wenhao.gif"></a>
+                  商品优惠价格：</td>
+                  <td>[+]优惠数量
+                  <input type="text" name="" size="8">
+                  优惠价格
+                  <input type="text" name="" size="8"><br>
+                  <span class="notice-span">
+                    购买数量达到优惠数量时享受的优惠价格
+                  </span>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">市场售价：</td>
+                  <td>
+                    <input type="text" name="" size="20" id="price">
+                    <input type="button" name="" value="取整数">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">虚拟销量：</td>
+                  <td>
+                    <input type="text" name="" size="20" id="sales">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">
+                <a href="javascript:void(0)"><img src="/img/wenhao.gif"></a>
+                  赠送消费积分数：</td>
+                  <td>
+                  <input type="text" name="" size="8"><br>
+                  <span class="notice-span">
+                    购买该商品时赠送消费积分数,-1表示按商品价格赠送
+                  </span>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">
+                <a href="javascript:void(0)"><img src="/img/wenhao.gif"></a>
+                  赠送等级积分数：</td>
+                  <td>
+                  <input type="text" name="" size="8"><br>
+                  <span class="notice-span">
+                    购买该商品时赠送消费积分数,-1表示按商品价格赠送
+                  </span>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">
+                <a href="javascript:void(0)"><img src="/img/wenhao.gif"></a>
+                  积分购买金额：</td>
+                  <td>
+                  <input type="text" name="" size="8"><br>
+                  <span class="notice-span">
+                    (此处需填写金额)购买该商品时最多可以使用积分的金额
+                  </span>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">
+                    <label>
+                      <input type="checkbox" name="">促销价
+                    </label>
+                  </td>
+                  <td>
+                    <input type="text" name="" size="20">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">促销日期：</td>
+                  <td>
+                    <input type="text" name="" value="2018-01-17">
+                    <input type="button" name="" value="选择" class="button">-
+                    <input type="text" name="" value="2018-02-17">
+                    <input type="button" name="" value="选择" class="button">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">上传商品图片：</td>
+                  <td>
+                    <input type="file" name="" size="35" id="img">
+                    <img src="/img/no.gif"><br>
+                    <input type="text" name="">
+                  </td>
+                </tr>
+                <tr><td class="label">上传商品缩略图：</td>
+                  <td>
+                    <input type="file" name="" size="
+                    35" disabled="disabled">
+                    <img src="/img/no.gif"><br>
+                    <input type="text" name="" disabled="disabled"><br>
+                    <label>
+                      <input type="checkbox" name="" checked="checked">自动生成商品缩略图
+                    </label>
+                  </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          <table class="xuan_table xuan-yin" >
+            <tr>
+              <td align="center">
+                <textarea rows="15" cols="80"></textarea>
+              </td>
+            </tr>
+          </table>
+          <table class="xuan_table xuan-yin" >
+            <tbody>
+              <tr>
+                <td class="label">商品重量：</td>
+                <td>
+                  <input type="text" name="" size="20">
+                  <select>
+                    <option value="1" selected>千克</option>
+                    <option value="0.001">克</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                    <a href="javascript:void(0)"><img src="/img/wenhao.gif" style="display:inline-block;margin-top: 8px;;"></a>
+                  商品库存数量：</td>
+                  <td>
+                    <input type="text" name="" value="1" size="20"><br>
+                    <span class="notice-span">库存在商品为虚货或商品存在货品时为不可编辑状态，库存数值取决于其虚货数量或货品数量</span>
+                  </td>
+              </tr>
+              <tr>
+                <td class="label">商品重量：</td>
+                <td>
+                    <input type="text" name="" value="1" size="20"><br>
+                  </td>
+              </tr>
+              <tr>
+                <td class="label">加入推荐：</td>
+                <td>
+                  <input type="checkbox" name="">精品
+                  <input type="checkbox" name="">新品
+                  <input type="checkbox" name="">热销
+                </td>
+              </tr>
+              <tr>
+                <td class="label">上架：</td>
+                <td>
+                  <input type="checkbox" name="" checked="checked"> 打勾表示允许销售，否则不允许销售。
+                </td>
+              </tr>
+              <tr>
+                <td class="label">能作为普通商品销售：</td>
+                <td>
+                  <input type="checkbox" name="" checked="checked">  打勾表示能作为普通商品销售，否则只能作为配件或赠品销售。
+                </td>
+              </tr>
+              <tr>
+                <td class="label">商品关键词：</td>
+                <td>
+                  <input type="text" name="" size="40">用空格分隔
+                </td>
+              </tr>
+              <tr>
+                <td class="label">商品简单描述：</td>
+                <td>
+                  <textarea cols="40" rows="3"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                    <a href="javascript:void(0)"><img src="/img/wenhao.gif" style="display:inline-block;margin-top: 8px;"></a>
+                  商家备注：</td>
+                  <td>
+                    <textarea cols="40" rows="3"></textarea><br>
+                    <span class="notice-span">仅供商家自己看的信息</span>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="xuan_table xuan-yin" >
+            <tbody>
+              <tr>
+                <td class="label">
+                    <a href="javascript:void(0)"><img src="/img/wenhao.gif" style="display:inline-block;margin-top: 8px;"></a>
+                  商品类型：</td>
+                  <td>
+                    <select>
+                      <option>请选择商品类型</option>
+                      <option>书</option>
+                      <option>音乐</option>
+                      <option>电影</option>
+                      <option>手机</option>
+                      <option>笔记本电脑</option>
+                      <option>数码相机</option>
+                      <option>化妆品</option>
+                      <option>精品手机</option>
+                      <option>服装</option>
+                      <option>液晶电视</option>
+                      <option>美妆</option>
+                      <option>书</option>
+                      <option>音乐</option>
+                      <option>电影</option>
+                      <option>手机</option>
+                      <option>笔记本电脑</option>
+                      <option>数码相机</option>
+                      <option>化妆品</option>
+                      <option>精品手机</option>
+                    </select><br>
+                    <span class="notice-span">请选择商品的所属类型，进而完善此商品的属性</span>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="xuan_table xuan-yin" >
+            <tbody>
+              <tr>
+                <td class="label">
+                  <a href="javascript:void(0)" style="color: #000">[+]</a>图片描述
+                  <input type="text" name="" size="20">上传文件
+                  <input type="file" name="">
+                  <input type="text" name="" size="40" value="或者输入外部图片链接地址" style="color: #aaa">
+                </td>
+              </tr>
+            </tbody>
+            
+          </table>
+          <table class="xuan_table xuan-yin" >
+            <tr>
+              <td>不要看了</td>
+            </tr>
+          </table>
+          <table class="xuan_table xuan-yin" >
+            <tr>
+              <td>后面没有了</td>
+            </tr>
+          </table>
+          <table class="xuan_table xuan-yin" >
+            <tr>
+              <td>还看！！</td>
+            </tr>
+          </table>
+
+            <div class="button-div">
+              <input type="button" onclick="upload()" name="" value="确认" class="" style="width:62px;height:26px;background:#ff3f3f;padding: 5px 15px 5px;border-radius: 3px;border:0;color:#fff;">
+              <input type="reset" name="" value="重置" class="button">
+            </div>
+          </form>
+        </div>
+     <!-- 以上为选项卡内容 -->
+      </div>
+    </div>
+
+    <div id="footer">
+			<span class="footer-o">
+共执行 7 个查询，用时 0.023026 秒，Gzip 已禁用，内存占用 3.552 MB</span><br>
+			<span>
+版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。</span>
+		</div>
+		<!--以上为footer部分-->
+  </div>
+</div>
+  </body>
+</html>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+  $("#tab-inp span").click(function () {
+  		var index = $(this).index();
+  		for (var i=0;i<$("#tab-inp span").length;i++) {
+  			$("#tab-inp span").eq(i).attr("class","tab-back");
+  			$(".xuan_table").eq(i).attr("class","xuan_table xuan-yin");
+  		}
+  		$(this).attr("class","tab-front");
+  		$(".xuan_table").eq(index).attr("class","xuan_table");
+  })
+  	//以上为选项卡的效果
+  	
+  	
+  	
+	$(".price").click(function(){
+		$(".wang").css("display","block");
+	})
+	$("#ya").click(function(){
+		$(".wang").css("display","none");
+	})
+	//以上为添加分类按钮的效果
+	
+	
+	
+	$(".button").click(function(){
+		$(".wangya").css("display","block")
+	})
+	//以上为扩展分类里添加按钮的效果
+	
+	
+	
+	$(".pingpai").click(function(){
+		$(".wangyage").css("display","block");
+	})
+	$("#ge").click(function(){
+		$(".wangyage").css("display","none");
+	})
+	//以上为添加品牌按钮的效果
+	
+	
+	
+	function upload() {
+//		alert("123")
+		var form = new FormData(); // FormData是H5新特性
+		form.append("goods_name", document.getElementById("goods_name").value);
+		form.append("article", document.getElementById("article").value);
+		form.append("sales", document.getElementById("sales").value);
+		form.append("price", document.getElementById("price").value);
+//		form.append("img", document.getElementById("img").files[0]);
+
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", "/api/goods_upload");
+		xhr.onreadystatechange = function(res){
+			if (xhr.readyState==4 && xhr.status==200) {
+				console.log(xhr.responseText);
+				var res = JSON.parse(xhr.responseText);
+				alert(res.message);
+			}
+		}
+		xhr.send(form);
+	}
+</script>
